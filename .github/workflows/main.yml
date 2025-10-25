@@ -1,6 +1,11 @@
 name: hola
-on: push
+on: 
+  push:
+    branches: ["main" , "dev"]
 jobs:
   hola_deliver:
     runs-on: ubuntu-latest
+    steps:
+      - name: saludar
+        run: echo "Hola funciona"
     
